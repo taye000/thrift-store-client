@@ -2,6 +2,7 @@
   <div id="app">
     <NavbarComponent />
     <HeroComponent />
+    <MenWomenComponent />
     <BrandsComponent />
     <FeaturesComponent />
     <FooterComponent />
@@ -14,6 +15,7 @@ import HeroComponent from './components/Hero.vue';
 import FeaturesComponent from './components/Features.vue';
 import FooterComponent from './components/Footer.vue';
 import BrandsComponent from './components/Brands.vue';
+import MenWomenComponent from './components/MenWomen.vue';
 
 export default {
   name: 'App',
@@ -21,6 +23,7 @@ export default {
     NavbarComponent,
     HeroComponent,
     BrandsComponent,
+    MenWomenComponent,
     FeaturesComponent,
     FooterComponent,
   },

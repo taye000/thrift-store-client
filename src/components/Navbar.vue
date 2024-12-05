@@ -1,6 +1,6 @@
 <template>
     <nav class="navbar">
-      <div class="brand">ThriftStore</div>
+      <div class="brand">ThriftStoreKe</div>
       <ul class="nav-links">
         <li><a href="/">Home</a></li>
         <li><a href="/shop">Shop</a></li>

@@ -1,7 +1,7 @@
 <template>
     <footer class="footer">
       <div class="footer-content">
-        <p>&copy; 2024 ThriftStore. All rights reserved.</p>
+        <p>&copy; 2024 ThriftStoreKe. All rights reserved.</p>
         <ul class="footer-links">
           <li><a href="/faq">FAQs</a></li>
           <li><a href="/terms">Terms & Conditions</a></li>
