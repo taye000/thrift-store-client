@@ -31,39 +31,65 @@
   <style scoped>
   .features {
     text-align: center;
-    padding: 2rem;
+    padding: 3rem;
     background-color: #dcd9d7;
-    margin-top: 2rem;
+    margin-top: 3rem;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
   }
   
   .features h2 {
-    font-size: 2rem;
-    color: #164f87;
-    margin-bottom: 1.5rem;
+    font-size: 2.25rem;
+    color: #2a9d8f;
+    margin-bottom: 2rem;
+    font-weight: 700;
   }
   
   .feature-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 1.5rem;
   }
   
   .feature {
-    background-color: #b7b3b1;
-    padding: 1.5rem;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .feature:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
   }
   
   .feature h3 {
     font-size: 1.5rem;
     color: #457b9d;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
   }
   
   .feature p {
-    font-size: 1rem;
+    font-size: 1.1rem;
     color: #333333;
+    line-height: 1.6;
+  }
+  
+  @media (max-width: 768px) {
+    .features h2 {
+      font-size: 2rem;
+    }
+  
+    .feature h3 {
+      font-size: 1.25rem;
+    }
+  
+    .feature p {
+      font-size: 1rem;
+    }
   }
   </style>
   
