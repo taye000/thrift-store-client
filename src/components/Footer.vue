@@ -28,12 +28,32 @@
   </script>
   
   <style scoped>
+  /* Reset default margin and padding */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html, body {
+    height: 100%;
+    width: 100%;
+  }
+  
+  body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Footer Styling */
   .footer {
     background-color: #2c3e50;
     color: white;
     padding: 3rem 1.5rem;
     text-align: center;
-    margin-top: 2rem;
+    position: relative; /* Make sure it's positioned normally */
+    bottom: 0;
+    width: 100%;
   }
   
   .footer-content {
@@ -90,6 +110,7 @@
     gap: 1.5rem;
   }
   
+  /* Social icon styling */
   .social-icon {
     width: 32px;
     height: 32px;

@@ -32,7 +32,8 @@ export default {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  padding: 2rem; /* Increased padding for a more spacious feel */
+  padding: 2rem;
+  margin-top: 4rem;
   background: linear-gradient(135deg, #dcd9d7, #f4f4f4); /* Subtle gradient */
   gap: 2rem;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Soft shadow */
@@ -71,6 +72,7 @@ export default {
   margin-bottom: 0.75rem;
   position: relative;
   padding-left: 2rem;
+  font-style: italic;
 }
 
 .hero-features li::before {

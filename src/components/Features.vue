@@ -76,6 +76,7 @@
     font-size: 1.1rem;
     color: #333333;
     line-height: 1.6;
+    font-style: italic;
   }
   
   @media (max-width: 768px) {
