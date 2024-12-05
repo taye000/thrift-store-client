@@ -2,7 +2,7 @@
   <section class="hero">
     <div class="hero-text">
       <h1>The Thrift Store</h1>
-      <h2>Your plug for all things, Thrift!</h2>
+      <h2>Your plug for all things thrift!</h2>
       <ul class="hero-features">
         <li>Unique Finds</li>
         <li>100% Authentic Brands</li>
@@ -13,7 +13,7 @@
     <div class="hero-image-wrapper">
       <img
         class="hero-image"
-        src="@/assets/the-north-face-jacket.jpg"
+        src="@/assets/nike-kyrie-4.jpg"
         alt="Thrift store hero"
       />
     </div>
@@ -22,50 +22,55 @@
 
 <script>
 export default {
-  name: 'HeroComponent',
+  name: "HeroComponent",
 };
 </script>
 
 <style scoped>
 .hero {
   display: flex;
-  flex-direction: row; /* Ensure horizontal alignment */
+  flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
-  gap: 2rem; /* Space between text and image */
-  padding: 2rem;
-  background-color: #dcd9d7;
+  justify-content: center;
+  padding: 2rem; /* Increased padding for a more spacious feel */
+  background: linear-gradient(135deg, #dcd9d7, #f4f4f4); /* Subtle gradient */
+  gap: 2rem;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Soft shadow */
 }
 
 .hero-text {
-  flex: 1; /* Allow the text section to grow */
+  flex: 1;
+  max-width: 600px; /* Limit width for better alignment */
   text-align: left;
 }
 
 .hero h1 {
-  font-size: 3rem;
-  color: #457b9d;
-  margin-bottom: 0.5rem;
+  font-size: 3.5rem;
+  font-weight: bold;
+  color: #264653;
+  margin-bottom: 1rem;
+  line-height: 1.2;
 }
 
 .hero h2 {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   color: #2a9d8f;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
+  font-weight: 500;
 }
 
 .hero-features {
   list-style: none;
   padding: 0;
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
   font-size: 1.2rem;
-  color: #101230;
+  color: #333;
 }
 
 .hero-features li {
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.75rem;
   position: relative;
-  padding-left: 1.5rem;
+  padding-left: 2rem;
 }
 
 .hero-features li::before {
@@ -73,18 +78,19 @@ export default {
   position: absolute;
   left: 0;
   color: #2a9d8f;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }
 
 .cta-button {
   background-color: #457b9d;
   color: white;
-  padding: 0.75rem 1.5rem;
+  padding: 1rem 2rem;
   font-size: 1.2rem;
+  font-weight: bold;
   border: none;
-  border-radius: 4px;
+  border-radius: 50px; /* Rounded button for a modern feel */
   cursor: pointer;
-  transition: background-color 0.3s;
+  transition: all 0.3s ease;
 }
 
 .cta-button:hover {
@@ -92,27 +98,41 @@ export default {
 }
 
 .hero-image-wrapper {
-  flex: 1; /* Allow the image section to grow */
-  max-width: 600px; /* Limit the width of the image */
-  height: 400px; /* Fixed height for the image container */
+  flex: 1;
+  max-width: 500px;
+  height: 500px;
+  border-radius: 10px;
   overflow: hidden;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
 }
 
 .hero-image {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Ensures the image fits while maintaining aspect ratio */
+  object-fit: cover;
 }
 
 @media (max-width: 768px) {
   .hero {
-    flex-direction: column; /* Stack text and image vertically on smaller screens */
+    flex-direction: column; /* Stack text and image on mobile */
+    padding: 2rem;
   }
 
   .hero-text {
-    text-align: center;
+    text-align: center; /* Center-align text for smaller screens */
+  }
+
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero h2 {
+    font-size: 1.5rem;
+  }
+
+  .cta-button {
+    width: 80%; /* Larger button on mobile for better visibility */
+    margin: 0 auto;
   }
 }
 </style>

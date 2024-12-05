@@ -10,6 +10,13 @@
           </div>
         </div>
         <div class="category-card">
+          <img :src="require('@/assets/kids.jpg')" alt="Kid's Fashion" />
+          <div class="category-info">
+            <h3>Kid's Fashion</h3>
+            <button class="cta-button">Shop Now</button>
+          </div>
+        </div>
+        <div class="category-card">
           <img :src="require('@/assets/women.jpg')" alt="Women's Fashion" />
           <div class="category-info">
             <h3>Women's Fashion</h3>
