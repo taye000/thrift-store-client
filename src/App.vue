@@ -4,6 +4,7 @@
     <HeroComponent />
     <MenWomenComponent />
     <BrandsComponent />
+    <ItemsCarousel />
     <FeaturesComponent />
     <FooterComponent />
   </div>
@@ -16,6 +17,7 @@ import FeaturesComponent from './components/Features.vue';
 import FooterComponent from './components/Footer.vue';
 import BrandsComponent from './components/Brands.vue';
 import MenWomenComponent from './components/MenWomen.vue';
+import ItemsCarousel from './components/ItemsCarousel.vue';
 
 export default {
   name: 'App',
@@ -25,6 +27,7 @@ export default {
     BrandsComponent,
     MenWomenComponent,
     FeaturesComponent,
+    ItemsCarousel,
     FooterComponent,
   },
 };
