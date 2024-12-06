@@ -8,7 +8,7 @@
         <li>100% Authentic Brands</li>
         <li>2 Weeks Return</li>
       </ul>
-      <button class="cta-button">Shop Now</button>
+      <router-link to="/shop" class="cta-button">Shop Now</router-link>
     </div>
     <div class="hero-image-wrapper">
       <img
@@ -76,7 +76,7 @@ export default {
 }
 
 .hero-features li::before {
-  content: '✔';
+  content: "✔";
   position: absolute;
   left: 0;
   color: #2a9d8f;
@@ -93,6 +93,7 @@ export default {
   border-radius: 4px;
   cursor: pointer;
   transition: all 0.3s ease;
+  text-decoration: none;
 }
 
 .cta-button:hover {

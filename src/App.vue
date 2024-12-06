@@ -2,25 +2,25 @@
   <div id="app" class="app-wrapper">
     <!-- Navbar at the top -->
     <NavbarComponent />
-    
+
     <!-- Main content dynamically loaded based on route -->
     <main class="main-content">
       <div class="content-wrapper">
         <router-view />
       </div>
     </main>
-    
+
     <!-- Footer at the bottom -->
     <FooterComponent />
   </div>
 </template>
 
 <script>
-import NavbarComponent from './components/Navbar.vue';
-import FooterComponent from './components/Footer.vue';
+import NavbarComponent from "./components/Navbar.vue";
+import FooterComponent from "./components/Footer.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
     NavbarComponent,
     FooterComponent,
@@ -29,7 +29,9 @@ export default {
 </script>
 
 <style>
-html, body, #app {
+html,
+body,
+#app {
   height: 100%;
   margin: 0;
   padding: 0;
@@ -47,8 +49,8 @@ html, body, #app {
 }
 
 .content-wrapper {
-  max-width: 90%; 
-  margin: 0 auto; 
+  max-width: 90%;
+  margin: 0 auto;
 }
 
 footer {

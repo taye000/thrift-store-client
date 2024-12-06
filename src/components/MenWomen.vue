@@ -6,21 +6,21 @@
         <img :src="require('@/assets/Men.jpg.webp')" alt="Men's Fashion" />
         <div class="category-info">
           <h3>Men's Fashion</h3>
-          <button class="cta-button">Shop Now</button>
+          <router-link to="/shop" class="cta-button">Shop Now</router-link>
         </div>
       </div>
       <div class="category-card">
         <img :src="require('@/assets/kids.jpg')" alt="Kid's Fashion" />
         <div class="category-info">
           <h3>Kid's Fashion</h3>
-          <button class="cta-button">Shop Now</button>
+          <router-link to="/shop" class="cta-button">Shop Now</router-link>
         </div>
       </div>
       <div class="category-card">
         <img :src="require('@/assets/women.jpg')" alt="Women's Fashion" />
         <div class="category-info">
           <h3>Women's Fashion</h3>
-          <button class="cta-button">Shop Now</button>
+          <router-link to="/shop" class="cta-button">Shop Now</router-link>
         </div>
       </div>
     </div>
@@ -60,12 +60,12 @@ export default {
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease; 
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .category-card:hover {
   transform: scale(1.05);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); 
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
 .category-card img {
@@ -93,11 +93,12 @@ export default {
   background-color: #457b9d;
   color: white;
   padding: 0.75rem 1.5rem;
-  font-size: 1rem;
+  font-size: 1.2rem;
   border: none;
   border-radius: 4px;
   cursor: pointer;
   transition: background-color 0.3s;
+  text-decoration: none;
 }
 
 .cta-button:hover {
