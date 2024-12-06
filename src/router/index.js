@@ -1,12 +1,30 @@
 import { createRouter, createWebHistory } from "vue-router";
-import HomeView from "@/views/HomeView.vue";
-import ItemDetailView from "@/views/ItemDetailView.vue";
 
 const routes = [
   {
     path: "/",
     name: "Home",
-    component: HomeView,
+    component: () => import("../views/HomeView.vue"),
+  },
+  {
+    path: "/signin",
+    name: "SignIn",
+    component: () => import("../views/SigninView.vue"),
+  },
+  {
+    path: "/register",
+    name: "Register",
+    component: () => import("../views/RegisterView.vue"),
+  },
+  {
+    path: "/profile",
+    name: "Profile",
+    component: () => import("../views/ProfileView.vue"),
+  },
+  {
+    path: "/cart",
+    name: "Cart",
+    component: () => import("../views/CartView.vue"),
   },
   {
     path: "/shop",
@@ -16,7 +34,7 @@ const routes = [
   {
     path: "/item/:id",
     name: "ItemDetailView",
-    component: ItemDetailView,
+    component: () => import("../views/ItemDetailView.vue"),
     props: true,
   },
 ];

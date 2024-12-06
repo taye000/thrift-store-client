@@ -46,7 +46,7 @@ export default {
 
 .features h2 {
   font-size: 2.25rem;
-  color: #2a9d8f;
+  color: #457b9d;
   margin-bottom: 2rem;
   font-weight: 700;
 }
