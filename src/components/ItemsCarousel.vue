@@ -4,7 +4,9 @@
       <div class="carousel">
         <ItemCard v-for="(item, index) in items" :key="index" :item="item" />
       </div>
-      <button class="cta-button">Shop Now</button>
+      <div class="button-container">
+        <button class="cta-button">Shop Now</button>
+      </div>
     </section>
   </template>
   
@@ -49,7 +51,12 @@
     gap: 1.5rem;
     padding: 1rem;
   }
-
+  
+  .button-container {
+    text-align: center; /* Center the button horizontally */
+    margin-top: 1.5rem;
+  }
+  
   .cta-button {
     background-color: #457b9d;
     color: white;

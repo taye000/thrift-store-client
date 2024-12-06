@@ -43,15 +43,14 @@ export default {
 
 .carousel {
   display: flex;
-  overflow-x: auto;
+  justify-content: center; /* Center cards horizontally */
+  flex-wrap: wrap; /* Allow wrapping for smaller screens */
   gap: 1rem;
-  scroll-snap-type: x mandatory;
   padding: 1rem;
 }
 
 .carousel-item {
   flex: 0 0 auto;
-  scroll-snap-align: start;
   background-color: white;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -59,7 +58,7 @@ export default {
   width: 150px;
   padding: 1rem;
   cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.2s ease; /* Transition added here */
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .carousel-item:hover {

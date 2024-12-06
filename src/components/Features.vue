@@ -45,7 +45,7 @@
   }
   
   .feature-grid {
-    display: grid;
+    display: flex;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 2rem;
     margin-top: 1.5rem;

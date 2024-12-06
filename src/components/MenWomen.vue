@@ -38,7 +38,6 @@ export default {
   text-align: center;
   background-color: #dcd9d7;
   padding: 2rem;
-  border-radius: 8px;
   margin-top: 2rem;
 }
 
@@ -61,12 +60,12 @@ export default {
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add transition for transform and shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; 
 }
 
 .category-card:hover {
-  transform: scale(1.05); /* Slightly scale the card on hover */
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Add a more prominent shadow */
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); 
 }
 
 .category-card img {
